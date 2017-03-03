@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.xinkong.xinkongutils.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.xinkong.myutils.SlideView
+        android:id="@+id/slideview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        app:bg_drawable="@drawable/bg_slideview"
+        app:bg_text="滑动开始确认"
+        app:bg_text_color="@color/white"
+        app:bg_text_complete="松开即可确认"
+        app:bg_text_size="18sp"
+        app:enable_when_full="true"
+        app:gradient_color1="#0a0a0a"
+        app:gradient_color2="#FFFFFF"
+        app:gradient_color3="#0a0a0a"
+        app:icon_drawable="@mipmap/btn_confirm_wy_yellow"
+        app:icon_ratio="0.15"
+        app:min_height="48dp"
+        app:reset_not_full="true"
+        app:secondary_color="@color/yellow"/>/>
 </RelativeLayout>
